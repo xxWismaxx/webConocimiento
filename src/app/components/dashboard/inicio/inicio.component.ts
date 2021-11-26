@@ -98,8 +98,8 @@ export class InicioComponent implements OnInit {
 
   descargarelemento(id: string, url: string){
     console.log(id)
-    console.log('http://localhost:4000/'+url)
-    window.location.href='http://localhost:4000/'+url;    
+    console.log('http://3.142.110.174:4000/'+url)
+    window.location.href='http://3.142.110.174:4000/'+url;    
   }
 
   editconocimiento(id: string){
