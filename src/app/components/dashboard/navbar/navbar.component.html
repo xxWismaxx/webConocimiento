@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+    <span>Objetos de Aprendizaje</span>
+    <span class="example-spacer"></span>
+    <button style="font-size:100%;" mat-button routerLink="/dashboard">Inicio</button>
+    <button style="font-size:100%;" mat-button routerLink="/dashboard/usuarios" *ngIf="Admin">Usuarios</button>
+    <span class="example-spacer"></span>
+
+    <!-- <button mat-button routerLink="/dashboard">LogOut</button> -->
+    <button mat-icon-button class="example-icon" routerLink="/" aria-label="Example icon-button with menu icon">
+      <mat-icon (click)="salir()">logout</mat-icon>
+    </button>
+  </mat-toolbar>
+

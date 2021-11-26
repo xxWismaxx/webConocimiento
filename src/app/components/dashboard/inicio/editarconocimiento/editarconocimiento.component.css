@@ -1,0 +1,17 @@
+.ancho{
+    width: 80%;
+}
+.ancho2{
+    width: 77%;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 320px;
+    overflow: auto;
+    width: 300px;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}

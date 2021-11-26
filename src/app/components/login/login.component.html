@@ -1,0 +1,27 @@
+<div class="body">
+  <div class="login">
+    <mat-spinner *ngIf="loading" class="spiner" diameter="50"></mat-spinner>
+    <form *ngIf="!loading" ngNativeValidate [formGroup]="form" (ngSubmit)="loguearse()">
+      <img src="assets/img/user.png" width="50%" height="80%">
+        <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
+        <mat-form-field class="ancho" appearance="fill">
+            <mat-label>Correo</mat-label>
+            <input matInput type="email" required formControlName="correo" [(ngModel)]="user.email">
+          </mat-form-field>
+          <mat-form-field class="ancho" appearance="fill">
+            <mat-label type="password">Contraseña</mat-label>
+            <input matInput type="password" required formControlName="password" [(ngModel)]="user.password">
+          </mat-form-field>
+          <br>
+          <button class="ancho" mat-raised-button mat-button color="primary" [disabled]="form.invalid">Iniciar</button>
+          <div style="padding-top: 5%; padding-bottom: 5%;">
+          <mat-divider style="width: 30%; display: inline-block;"></mat-divider>
+          <span style="padding: 20px; font-weight: 500;">ó</span>
+          <mat-divider style="width: 30%; display: inline-block;"></mat-divider>
+          </div>
+          <button (click)="registro()" class="ancho" mat-raised-button mat-button color="accent">Registrase</button>       
+    </form>
+  </div>
+</div>
+
+

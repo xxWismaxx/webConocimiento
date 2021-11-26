@@ -1,0 +1,28 @@
+<div class="body">
+
+    <div class="login">
+      <img src="assets/img/registro.png" width="50%" height="80%">
+      <form ngNativeValidate [formGroup]="form" (ngSubmit)="aceptarregistro()">
+        <h1 class="h3 mb-3 fw-normal">Registrarse</h1>
+
+          <mat-form-field class="ancho" appearance="fill">
+            <mat-label>Correo</mat-label>
+            <input matInput  type="email" required formControlName="correo" [(ngModel)]="user.email">
+          </mat-form-field>
+
+          <mat-form-field class="ancho" appearance="fill">
+            <mat-label type="password">Contraseña</mat-label>
+            <input matInput type="password" required formControlName="password"  [(ngModel)]="user.password">
+          </mat-form-field>
+
+        <button class="ancho" mat-raised-button mat-button color="primary">Registrarse</button>
+        <div style="padding-top: 5%; padding-bottom: 5%;">
+          <mat-divider style="width: 30%; display: inline-block;"></mat-divider>
+          <span style="padding: 20px; font-weight: 500;">ó</span>
+          <mat-divider style="width: 30%; display: inline-block;"></mat-divider>
+          </div>
+        <button routerLink="/login" class="ancho" mat-raised-button mat-button color="accent">Regresar</button>    
+      </form>    
+    </div>
+</div>
+
