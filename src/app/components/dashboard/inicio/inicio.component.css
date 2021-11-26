@@ -3,11 +3,15 @@ table {
 }
 
 th{
-  width: 10%;
+  width: 15%;
 }
 
 .th2{
-  width: 35%;
+  width: 25%;
+}
+
+.th3{
+  width: 7%;
 }
 
 .pointer{
