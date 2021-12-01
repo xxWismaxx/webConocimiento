@@ -10,9 +10,9 @@ import axios  from 'axios';
 })
 export class AuthService {
   //usuarios
-  private URL ='http://3.142.110.174:4000/api'
-  URI = 'http://3.142.110.174:4000/api/photos';
-  URlmaster ='http://3.142.110.174:4000/api//photos/maestros'
+  private URL ='http://54.86.218.58:4000/api'
+  URI = 'http://54.86.218.58:4000/api/photos';
+  URlmaster ='http://54.86.218.58:4000/api//photos/maestros'
 
 
 
@@ -60,16 +60,16 @@ export class AuthService {
   }
 
   getusers() {
-    return axios.get('http://3.142.110.174:4000/api/users');
+    return axios.get('http://54.86.218.58:4000/api/users');
   }
 
   deleteuser(id: string) {
-    return axios.post('http://3.142.110.174:4000/api/usersdelete'+`/${id}`);
+    return axios.post('http://54.86.218.58:4000/api/usersdelete'+`/${id}`);
   }
 
   updateuser(id: string, type: string) {
    // return axios.post('http://localhost:4000/api/usersupdate'+`/${id}`, {type});
-    return this.http.put('http://3.142.110.174:4000/api/usersupdate'+`/${id}`, {type});
+    return this.http.put('http://54.86.218.58:4000/api/usersupdate'+`/${id}`, {type});
   }
 
   getPhoto(id: any){
